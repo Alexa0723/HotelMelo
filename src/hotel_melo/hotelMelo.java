@@ -14,7 +14,8 @@ public class hotelMelo {
             //Creamos los empleados
             Recepcionist recepcionist = new Recepcionist();
             Chef chef= new Chef("Frances");
-            
+            Chef chefItaliano = new Chef("Italiano");
+        
             //Creamos un cliente tipo guest
             Guest guest1= new Guest("Pepe");
             Inventory inventoryGuest1 = new Inventory(guest1,0) ;
@@ -28,7 +29,7 @@ public class hotelMelo {
             int n= random.nextInt(3);
             if (n == 0){
                 System.out.println("Hellow SoccerPlayer");
-                soccerPlayer.orderFood(chef,inventorySoccerPlayer,recepcionist);
+                soccerPlayer.orderFood(chefItaliano,inventorySoccerPlayer,recepcionist);
                 recepcionist.generateFoodBill(inventorySoccerPlayer);
             }
             else{
